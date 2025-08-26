@@ -1,48 +1,168 @@
+/** Color palett **/
+
+$primary-100 : #154D71;
+$primary-65 : rgb(from #154D71 r g b / 65%);
+$primary-30 : rgb(from #154D71 r g b / 30%);
+
+$secondary-100 : #CFAB8D;
+$secondary-65 : rgb(from #154D71 r g b / 65%);
+$secondary-30 : rgb(from #154D71 r g b / 30%);
+
+$black : #0F0E0E;
+$white : #FDFDFD;
+$background : #F9F6F3;
+$gray-dark : #4C4C4C;
+$gray-light : #DADAD7;
+
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-html{
+html {
     font-size: 20px;
 }
 
-.navbar{
+.navbar {
     height: 4rem;
-    border-bottom: solid black 2px;
+    border-bottom: solid $gray-light 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.brand-container{
+.brand-container {
     padding: 0.5rem;
 }
 
-.brand-name{
+.brand-name {
     font-size: 24px;
 }
 
-.menu-list{
+.menu-list {
     display: flex;
     flex-direction: row;
     gap: 3rem;
 }
 
-.menu-element{
+.menu-element {
     padding: 0.5rem;
     list-style-type: none;
+    margin-right: 0.25rem;
 }
 
-.menu-higlight{
-    
+.menu-higlight {
+    background-color: $primary-65;
+    border-radius: 5px;
 }
 
-.menu-link{
-    color: black;
+.menu-link {
+    color: $black;
+    text-decoration: none;
 }
 
-.menu-link:visited{
-    color: black;
+.menu-link:visited {
+    color: $black;
+    text-decoration: none;
+}
+
+.menu-link-highlight {
+    color: $white;
+    text-decoration: none;
+}
+
+.menu-link-highlight:visited {
+    color: $white;
+    text-decoration: none;
+}
+
+.hero-banner {
+    height: 15rem;
+    background-color: $primary-65;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $gray-light;
+}
+
+.forground {
+    text-align: center;
+    padding: 2rem;
+    background-color: $gray-light;
+    border-radius: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper-text {
+    color: $white;
+}
+
+.wrapper-button {
+    padding: 0.5rem;
+    margin: 1rem;
+    max-width: max-content;
+
+    background-color: $white;
+    color: $black;
+
+    border-radius: 5px;
+}
+
+.title-2-hero {
+    color: $white;
+}
+
+.title-2 {
+    padding: 0.50rem;
+}
+
+.announce-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.announce {
+    max-width: fit-content;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid $gray-dark;
+    border-radius: 5px;
+
+    gap: 1rem;
+}
+
+.announce-text{
+
+}
+
+.announce-container-tag {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.announce-tag{
+    background-color: $primary-30;
+    padding: 0.25rem;
+    border-radius: 5px;
 }
