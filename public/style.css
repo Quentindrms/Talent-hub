@@ -6,6 +6,11 @@
 
 html {
   font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  padding-bottom: 1rem;
 }
 
 .navbar {
@@ -40,6 +45,7 @@ html {
 .menu-higlight {
   background-color: rgb(from #154D71 r g b/65%);
   border-radius: 5px;
+  box-shadow: 3px 3px rgb(from #154D71 r g b/30%);
 }
 
 .menu-link {
@@ -98,6 +104,7 @@ html {
   background-color: #FDFDFD;
   color: #0F0E0E;
   border-radius: 5px;
+  box-shadow: 4px 5px 2px 1px rgb(from #154D71 r g b/30%);
 }
 
 .title-2-hero {
@@ -126,19 +133,45 @@ html {
   flex-direction: column;
   border: 2px solid #4C4C4C;
   border-radius: 5px;
+  box-shadow: 2px 4px 2px #4C4C4C;
   gap: 1rem;
 }
 
-.announce-container-tag {
+.announce-footer {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .announce-tag {
   background-color: rgb(from #154D71 r g b/30%);
   padding: 0.25rem;
   border-radius: 5px;
+  box-shadow: 4px 4px #DADAD7;
+}
+
+.get-announces {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.get-announces-button {
+  background-color: rgb(from #154D71 r g b/65%);
+  color: #FDFDFD;
+  padding: 0.1rem;
+  margin: 1rem;
+}
+
+.footer-container {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #DADAD7;
 }
 
 /*# sourceMappingURL=style.css.map */

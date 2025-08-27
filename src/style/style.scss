@@ -21,6 +21,11 @@ $gray-light : #DADAD7;
 
 html {
     font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main{
+    padding-bottom: 1rem;
 }
 
 .navbar {
@@ -55,6 +60,8 @@ html {
 .menu-higlight {
     background-color: $primary-65;
     border-radius: 5px;
+
+    box-shadow: 3px 3px $primary-30;
 }
 
 .menu-link {
@@ -115,6 +122,8 @@ html {
     color: $black;
 
     border-radius: 5px;
+    
+    box-shadow: 4px 5px 2px 1px $secondary-30;
 }
 
 .title-2-hero {
@@ -148,21 +157,45 @@ html {
     border: 2px solid $gray-dark;
     border-radius: 5px;
 
+    box-shadow: 2px 4px 2px $gray-dark;
+
     gap: 1rem;
 }
 
-.announce-text{
-
-}
-
-.announce-container-tag {
+.announce-footer {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .announce-tag{
     background-color: $primary-30;
     padding: 0.25rem;
     border-radius: 5px;
+
+    box-shadow: 4px 4px $gray-light;
+}
+
+.get-announces{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.get-announces-button{
+    background-color: $primary-65;
+    color: $white;
+    padding: 0.1rem;
+    margin: 1rem;
+}
+
+.footer-container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-light;
 }
