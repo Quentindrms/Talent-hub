@@ -1,0 +1,9 @@
+<%- include('../partials/head', {title:'Annonces'}) %>
+<%- include('../partials/header') %>
+    <main>
+    <% PostedAnnounce.forEach((announce) => { %>
+    <%- include("../elements/announce", {announce}) %>
+    <% }) %>
+    </main>
+
+<%- include('../partials/footer') %>
