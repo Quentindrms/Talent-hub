@@ -1,4 +1,4 @@
-import { Controller } from "../libs/controller";
+import { Controller } from "../libs/Controller";
 import { PostedAnnounce } from "../src/data/data";
 
 export class GlobalController extends Controller{
@@ -18,6 +18,12 @@ export class GlobalController extends Controller{
 
     public shareAnnounce(){
         this.response.render('pages/share-announce', {
+            PostedAnnounce,
+        })
+    }
+
+    public getAnnounce(){
+        this.response.render('pages/show-announce', {
             PostedAnnounce,
         })
     }

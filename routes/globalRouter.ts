@@ -1,4 +1,4 @@
-import {Router} from "express";
+import {request, Router} from "express";
 import { GlobalController } from "../controllers/globalController";
 
 const globalRouter = Router();
@@ -16,6 +16,11 @@ const globalRouter = Router();
     globalRouter.get('/share-announce', (request, response) => {
         const controller = new GlobalController(request, response);
         controller.shareAnnounce();
+    })
+
+    globalRouter.get('/view/:id', (request, response) => {
+        const controller = new GlobalController(request, response);
+        controller.getAnnounce();
     })
 
 export default globalRouter
