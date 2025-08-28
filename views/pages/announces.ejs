@@ -1,9 +1,12 @@
 <%- include('../partials/head', {title:'Annonces'}) %>
 <%- include('../partials/header') %>
     <main>
+        <h2 class="title-2">Toutes nos annonces</h2>
+        <div class="announce-container">
     <% PostedAnnounce.forEach((announce) => { %>
     <%- include("../elements/announce", {announce}) %>
     <% }) %>
+    </div>
     </main>
 
 <%- include('../partials/footer') %>
