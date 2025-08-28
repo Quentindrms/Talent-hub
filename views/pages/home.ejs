@@ -2,27 +2,20 @@
     <%- include('../partials/header') %>
 
     <main>
+
+            <%- include('../elements/hero') %>
+
         <h2 class="title-2">Les dernières annonces</h2>
 
         <div class="announce-container">
-            <div class="announce">
-                <h3 class="title-3-announce">Développeur</h3>
-                <p class="announce-text">Ceci est une offre d'emploi</p>
-                <div class="announce-footer">
-                    <p class="announce-tag">Javascript</p>
-                    <p class="announce-tag">Typescript</p>
-                    <div class="publication-date">
-                        <p class="timestamp-text">Il y'a 2 jours</p>
-                    </div>
-                </div>
-            </div>
-                    <%- include('../elements/announce') %>
+            <% PostedAnnounce.forEach((announce) => { %>
+                <%- include("../elements/announce", {announce}) %>
+            <% }) %>
         </div>
 
         <div class="get-announces">
             <p class="get-announces-button">Consulter toutes les annonces</p>
         </div>
-
         </main>
 
 

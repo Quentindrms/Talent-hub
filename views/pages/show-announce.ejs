@@ -1,0 +1,19 @@
+<% const pageTitle = announce.title + ' | TalentHub'; %>
+<%- include('../partials/head', {title: pageTitle}) %>
+<%- include('../partials/header') %>
+
+<main>
+
+<div class="display-announce">
+    <p class="announce-main-title"> <%= announce.title %></p>
+    <p class="announce-description"> <%= announce.description %></p>
+    <p class="announce-body-text"><%= announce.bodytext %></p>
+    <p class="announce-skills">Compétences du poste : <%= announce.skills %></p>
+    <p class="announce-type">Type de contrat : <%= announce.type %></p>
+    <p class="announce-start-date">Date de début du contrat : <%= announce.start_date %></p>
+    <p class="announce-salary">Rémunération : <%= announce.salary + announce.salary_unit %></p>
+</div>
+
+</main>
+
+<%- include('../partials/footer') %>
