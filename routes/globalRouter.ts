@@ -18,9 +18,6 @@ const globalRouter = Router();
         controller.shareAnnounce();
     })
 
-    globalRouter.get('/view/:id', (request, response) => {
-        const controller = new GlobalController(request, response);
-        controller.getAnnounce();
-    })
+
 
 export default globalRouter

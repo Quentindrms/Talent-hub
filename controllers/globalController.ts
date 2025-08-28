@@ -21,11 +21,4 @@ export class GlobalController extends Controller{
             PostedAnnounce,
         })
     }
-
-    public getAnnounce(){
-        this.response.render('pages/show-announce', {
-            PostedAnnounce,
-        })
-    }
-
 }

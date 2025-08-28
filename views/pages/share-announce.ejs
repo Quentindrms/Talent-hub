@@ -1,8 +1,59 @@
 <%- include('../partials/head', {title:'Postez votre annonce'}) %>
-<%- include('../partials/header') %>
+    <%- include('../partials/header') %>
 
-<main>
-    <p>Hello world</p>
-</main>
+        <main>
+            <h2 class="title-2">Création d'une annonce</h2>
 
-<%- include('../partials/footer') %>
+            <form class="announce-form">
+
+                <label class="form-label" for="title">Titre de l'annonce</label>
+                <input type="text" name="title" id="title">
+
+                <label class="form-label" for="description">Description de l'offre</label>
+                <textarea name="description" id="description" rows="25" cols="75"></textarea>
+
+                <label class="form-label" for="skills">Compétence(s) recherchée(s)</label>
+                <select name="skills">Sélectionnez les compétences>
+                    <option value="">Sélectionnez au moins une compétence</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="typescript">Typescript</option>
+                    <option value="cpp">C++</option>
+                    <option value="c">C</option>
+                    <option value="react">React</option>
+                    <option value="nodejs">NodeJS</option>
+                </select>
+
+                <div class="announce-form-select-area">
+                    <label class="form-label" for="type">Type de mission</label>
+                    <select name="type">Freelance, CDI...>
+                        <option value="freelance">Freelance</op>
+                        <option value="cdi">CDI</option>
+                        <option value="cdd">CDD</option>
+                        <option value="">Sélectionner le type de mission</option>
+                    </select>
+                    <label class="form-label" for="date">Date de début</label>
+                    <input type="date" name="date" id="date">
+                    <label class="form-label" for="salary">Salaire</label>
+                    <input type="text" id="salary" name="salary">
+                    <label class="form-label" for="unity">Unité de salaire</label>
+                    <select name="unity">Brut annuel>
+                        <option value="monthly">Brut mensuel</option>
+                        <option value="annualy">Brut annuel</option>
+                        <option value="daily">Brut journalier</option>
+                    </select>
+                </div>
+
+                <div class="create-password-field">
+                    <label class="form-label" for="password">Mot de passe</label>
+                    <input type="password" name="password">
+                    <p class="password-field-warning">Un mot de passe est nécessaire pour administrer l'annonce une fois
+                        publiée. Assurez vous de le conservez précieusement.</p>
+                </div>
+
+                    <input type="submit" value="Postez votre annonce">
+                </select>
+            </form>
+
+        </main>
+
+        <%- include('../partials/footer') %>
