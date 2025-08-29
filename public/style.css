@@ -1,4 +1,100 @@
 /** Color palett **/
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.announce-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 40%;
+  border: 2px solid #DADAD7;
+  padding: 2rem;
+  background-color: #FDFDFD;
+}
+
+.title-form {
+  color: #154D71;
+  padding: 0.25rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #154D71;
+}
+
+.announce-form-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.announce-form-select-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.75rem;
+  border: 2px solid #DADAD7;
+}
+
+.about-mission {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.create-password-field {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: rgb(from #154D71 r g b/65%);
+}
+
+.form-submit {
+  color: #154D71;
+  font-weight: bold;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+/** Color palett **/
+.display-announce {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 75%;
+  text-align: justify;
+}
+
+.announce-main-title {
+  font-size: 1rem;
+  color: rgb(from #154D71 r g b/65%);
+  font-weight: bold;
+  text-align: center;
+}
+
+.announce-description {
+  font-size: 0.9rem;
+  color: #4C4C4C;
+  font-style: italic;
+}
+
+.announce-body-text {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.announce-skills {
+  display: flex;
+  font-weight: bold;
+}
+
+/** Color palett **/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +107,16 @@ html {
 
 main {
   padding-bottom: 1rem;
+}
+
+.brand-name-link {
+  color: black;
+  text-decoration: none;
+}
+
+.brand-name-link:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .navbar {
@@ -70,6 +176,8 @@ main {
 
 .hero-banner {
   height: 15rem;
+  min-width: 100%;
+  max-width: 100%;
   background-color: rgb(from #154D71 r g b/65%);
   display: flex;
   flex-direction: row;
@@ -113,6 +221,7 @@ main {
 
 .title-2 {
   padding: 0.5rem;
+  color: #154D71;
 }
 
 .announce-container {
@@ -120,17 +229,19 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .announce {
-  max-width: fit-content;
+  max-width: 40%;
+  min-width: 30%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   border: 2px solid #4C4C4C;
   border-radius: 5px;
   box-shadow: 2px 4px 2px #4C4C4C;
@@ -182,6 +293,14 @@ main {
 .announce-link:visited {
   color: black;
   text-decoration: none;
+}
+
+.announces-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
