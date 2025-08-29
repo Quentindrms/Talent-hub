@@ -42,6 +42,12 @@ main {
   border: 2px solid #DADAD7;
 }
 
+.about-mission {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
 .create-password-field {
   font-size: 0.75rem;
   font-style: italic;
@@ -53,6 +59,39 @@ main {
   font-weight: bold;
   height: 2rem;
   padding: 0.5rem;
+}
+
+/** Color palett **/
+.display-announce {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 75%;
+  text-align: justify;
+}
+
+.announce-main-title {
+  font-size: 1rem;
+  color: rgb(from #154D71 r g b/65%);
+  font-weight: bold;
+  text-align: center;
+}
+
+.announce-description {
+  font-size: 0.9rem;
+  color: #4C4C4C;
+  font-style: italic;
+}
+
+.announce-body-text {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.announce-skills {
+  display: flex;
+  font-weight: bold;
 }
 
 /** Color palett **/
@@ -182,6 +221,7 @@ main {
 
 .title-2 {
   padding: 0.5rem;
+  color: #154D71;
 }
 
 .announce-container {

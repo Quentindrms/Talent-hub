@@ -12,7 +12,7 @@ $black : #0F0E0E;
 $white : #FDFDFD;
 $background : #F9F6F3;
 $gray-dark : #4C4C4C;
-$gray-light : #DADAD7;
+$gray-light : #DADAD7; 
 
 main{
     display: flex;
@@ -58,6 +58,12 @@ main{
     padding: 0.75rem;
 
     border: 2px solid $gray-light
+}
+
+.about-mission{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 .create-password-field{
