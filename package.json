@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch index.ts",
-    "watch:css": "sass --watch src/style/style.scss public/style.css"
+    "watch:css": "sass --watch src/style/style.scss public/style.css",
+    "start" : "tsx index.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "sass": "^1.90.0",
-    "tsx": "^4.20.5"
+    "tsx": "^4.20.5",
+    "zod": "^4.1.5"
   }
 }

@@ -3,15 +3,18 @@
 
         <main>
             <h2 class="title-form">Création d'une annonce</h2>
-            <form class="announce-form">
+            <form class="announce-form" action="/announce/post" method="post">
 
                 <div class="announce-form-header">
-                <label class="form-label" for="title">Titre de l'annonce</label>
-                <input type="text" name="title" id="title">
+                    <label class="form-label" for="title">Titre de l'annonce</label>
+                    <input type="text" name="title" id="title">
 
-                <label class="form-label" for="description">Description de l'offre</label>
-                <textarea name="description" id="description" rows="25" cols="75"></textarea>
-                    </div>
+                    <label class="form-label" for="description">Une courte introduction au poste</label>
+                    <input type="text" name="description" id="description">
+
+                    <label class="form-label" for="bodytext">Description de l'offre</label>
+                    <textarea name="bodytext" id="bodytext" rows="25" cols="75"></textarea>
+                </div>
                 <label class="form-label" for="skills">Compétence(s) recherchée(s)</label>
                 <select name="skills">Sélectionnez les compétences>
                     <option value="">Sélectionnez au moins une compétence</option>
@@ -25,26 +28,34 @@
 
                 <div class="announce-form-select-area">
                     <div class="about-mission">
-                    <label class="form-label" for="type">Type de mission</label>
-                    <select name="type">Freelance, CDI...>
-                        <option value="freelance">Freelance</op>
-                        <option value="cdi">CDI</option>
-                        <option value="cdd">CDD</option>
-                        <option value="">Sélectionner le type de mission</option>
-                    </select>
-                    <label class="form-label" for="date">Date de début</label>
-                    <input type="date" name="date" id="date">
+                        <label class="form-label" for="type">Type de mission</label>
+                        <select name="type" id="type">Freelance, CDI...>
+                            <option value="freelance">Freelance</op>
+                            <option value="cdi">CDI</option>
+                            <option value="cdd">CDD</option>
+                            <option value="">Sélectionner le type de mission</option>
+                        </select>
+                        <label class="form-label" for="start_date">Date de début</label>
+                        <input type="date" name="start_date" id="start_date">
                     </div>
                     <div class="about-salary">
-                    <label class="form-label" for="salary">Salaire</label>
-                    <input type="text" id="salary" name="salary">
-                    <label class="form-label" for="unity">Unité de salaire</label>
-                    <select name="unity">Brut annuel>
-                        <option value="monthly">Brut mensuel</option>
-                        <option value="annualy">Brut annuel</option>
-                        <option value="daily">Brut journalier</option>
-                    </select>
+                        <label class="form-label" for="salary">Salaire</label>
+                        <input type="number" id="salary" name="salary">
+                        <label class="form-label" for="unity">Unité de salaire</label>
+                        <select name="salary_unit" id="salary_unit">
+                            <option value="">Sélectionnez l'unité</option>
+                            <option value="monthly">Brut mensuel</option>
+                            <option value="annualy">Brut annuel</option>
+                            <option value="daily">Brut journalier</option>
+                        </select>
                     </div>
+                </div>
+
+                <div class="announce-form-contact">
+                    <label class="form-label" for="mail">Votre adresse de contact</label>
+                    <input type="email" name="mail">
+                    <label class="form-label" for="phone">Votre téléphone de contact</label>
+                    <input type="tel" name="phone">
                 </div>
 
                 <div class="create-password-field">
@@ -54,10 +65,9 @@
                         publiée. Assurez vous de le conservez précieusement.</p>
                 </div>
 
-                    <input type="submit" value="Postez votre annonce" class="form-submit">
+                <input type="submit" value="Postez votre annonce" class="form-submit">
                 </select>
             </form>
-
         </main>
 
         <%- include('../partials/footer') %>
