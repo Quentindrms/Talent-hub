@@ -10,6 +10,7 @@ const announceSchema = z.object({
     salary: z.string(),
     salary_unit: z.string(),
     mail: z.email(),
+    password: z.string(),
 })
 
 export function validateAnnounce(rawAnnounce:Announce){
