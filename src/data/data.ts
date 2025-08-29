@@ -8,7 +8,9 @@ export type Announce = {
     start_date: Date,
     salary: number,
     salary_unit: string,
-    password: string
+    password: string,
+    mail: string,
+    phone: string,
 }
 
 /** Données de base générée par IA */
@@ -24,7 +26,9 @@ export const PostedAnnounce: Announce[] = [
         start_date: new Date("2025-09-01"),
         salary: 40000,
         salary_unit: "€/an",
-        password: "frontend2025"
+        password: "frontend2025",
+        mail: "test@test.fr",
+        phone: "0000000000",
     },
     {
         id: 2,
@@ -36,7 +40,9 @@ export const PostedAnnounce: Announce[] = [
         start_date: new Date("2025-10-01"),
         salary: 45000,
         salary_unit: "€/an",
-        password: "chefprojet2025"
+        password: "chefprojet2025",
+        mail: "test@test.fr",
+        phone: "0000000000",
     },
     {
         id: 3,
@@ -48,7 +54,9 @@ export const PostedAnnounce: Announce[] = [
         start_date: new Date("2025-09-15"),
         salary: 38000,
         salary_unit: "€/an",
-        password: "data2025"
+        password: "data2025",
+        mail: "test@test.fr",
+        phone: "0000000000",
     },
     {
         id: 4,
@@ -60,7 +68,9 @@ export const PostedAnnounce: Announce[] = [
         start_date: new Date("2025-09-20"),
         salary: 42000,
         salary_unit: "€/an",
-        password: "admin2025"
+        password: "admin2025",
+        mail: "test@test.fr",
+        phone: "0000000000",
     },
     {
         id: 5,
@@ -72,6 +82,8 @@ export const PostedAnnounce: Announce[] = [
         start_date: new Date("2025-10-05"),
         salary: 37000,
         salary_unit: "€/an",
-        password: "uxui2025"
+        password: "uxui2025",
+        mail: "test@test.fr",
+        phone: "0000000000",
     }
 ]
