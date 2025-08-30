@@ -7,18 +7,18 @@
 
                 <div class="announce-form-header">
                     <label class="form-label" for="title">Titre de l'annonce</label>
-                    <input type="text" name="title" id="title" value="<%= values?.title || '' %>" required>
+                    <input type="text" class="form-input" name="title" id="title" value="<%= values?.title || '' %>" required>
 
                     <label class="form-label" for="description">Une courte introduction au poste</label>
-                    <input type="text" name="description" id="description" value="<%= values.description || '' %>"
+                    <input type="text" class="form-input" name="description" id="description" value="<%= values.description || '' %>"
                         required>
 
                     <label class="form-label" for="bodytext">Description de l'offre</label>
-                    <textarea name="bodytext" id="bodytext" rows="25" cols="75"
+                    <textarea name="bodytext" class="form-input" id="bodytext" rows="25" cols="75"
                         value="<%= values.bodytext || '' %>"></textarea>
                 </div>
                 <label class="form-label" for="skills">Compétence(s) recherchée(s)</label>
-                <select name="skills" value="<%= values.skills || '' %>" required>Sélectionnez les compétences>
+                <select name="skills" class="form-input" value="<%= values.skills || '' %>" required>Sélectionnez les compétences>
                     <option value="">Sélectionnez au moins une compétence</option>
                     <option value="javascript">Javascript</option>
                     <option value="typescript">Typescript</option>
@@ -31,7 +31,7 @@
                 <div class="announce-form-select-area">
                     <div class="about-mission">
                         <label class="form-label" for="type" required>Type de mission</label>
-                        <select name="type" id="type" value="<%= values.type || '' %>">Freelance, CDI...>
+                        <select name="type" id="type" class="form-input" value="<%= values.type || '' %>">Freelance, CDI...>
                             <option value="freelance">Freelance</op>
                             <option value="cdi">CDI</option>
                             <option value="cdd">CDD</option>
@@ -42,9 +42,9 @@
                     </div>
                     <div class="about-salary">
                         <label class="form-label" for="salary">Salaire</label>
-                        <input type="number" id="salary" name="salary" value="<%= values.salary || '' %>" required>
+                        <input type="number" class="form-input" id="salary" name="salary" value="<%= values.salary || '' %>" required>
                         <label class="form-label" for="unity">Unité de salaire</label>
-                        <select name="salary_unit" id="salary_unit" value="<%= values.salary_unit || '' %>" required>
+                        <select name="salary_unit" class="form-input" id="salary_unit" value="<%= values.salary_unit || '' %>" required>
                             <option value="">Sélectionnez l'unité</option>
                             <option value="monthly">Brut mensuel</option>
                             <option value="annualy">Brut annuel</option>
@@ -56,10 +56,10 @@
                 <div class="announce-form-contact">
                     <label class="form-label" for="mail" value="<%= values.mail || '' %>" required>Votre adresse de
                         contact</label>
-                    <input type="email" name="mail">
+                    <input type="email" name="mail" class="form-input">
                     <label class="form-label" for="phone" value="<%= values.phone || '' %>" required>Votre téléphone de
                         contact</label>
-                    <input type="tel" name="phone">
+                    <input type="tel" name="phone"class="form-input">
                 </div>
 
                 <div class="create-password-field">
