@@ -94,6 +94,22 @@ main {
   font-weight: bold;
 }
 
+.announce-title-3 {
+  font-size: 0.95rem;
+  color: #154D71;
+  text-align: center;
+}
+
+.announce-contact-link {
+  color: #154D71;
+  font-weight: bolder;
+}
+
+.announce-edit-link {
+  color: #154D71;
+  font-weight: bolder;
+}
+
 /** Color palett **/
 * {
   margin: 0;
