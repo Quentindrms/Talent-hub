@@ -7,16 +7,18 @@
 
                 <div class="announce-form-header">
                     <label class="form-label" for="title">Titre de l'annonce</label>
-                    <input type="text" name="title" id="title">
+                    <input type="text" name="title" id="title" value="<%= values?.title || '' %>" required>
 
                     <label class="form-label" for="description">Une courte introduction au poste</label>
-                    <input type="text" name="description" id="description">
+                    <input type="text" name="description" id="description" value="<%= values.description || '' %>"
+                        required>
 
                     <label class="form-label" for="bodytext">Description de l'offre</label>
-                    <textarea name="bodytext" id="bodytext" rows="25" cols="75"></textarea>
+                    <textarea name="bodytext" id="bodytext" rows="25" cols="75"
+                        value="<%= values.bodytext || '' %>"></textarea>
                 </div>
                 <label class="form-label" for="skills">Compétence(s) recherchée(s)</label>
-                <select name="skills">Sélectionnez les compétences>
+                <select name="skills" value="<%= values.skills || '' %>" required>Sélectionnez les compétences>
                     <option value="">Sélectionnez au moins une compétence</option>
                     <option value="javascript">Javascript</option>
                     <option value="typescript">Typescript</option>
@@ -28,21 +30,21 @@
 
                 <div class="announce-form-select-area">
                     <div class="about-mission">
-                        <label class="form-label" for="type">Type de mission</label>
-                        <select name="type" id="type">Freelance, CDI...>
+                        <label class="form-label" for="type" required>Type de mission</label>
+                        <select name="type" id="type" value="<%= values.type || '' %>">Freelance, CDI...>
                             <option value="freelance">Freelance</op>
                             <option value="cdi">CDI</option>
                             <option value="cdd">CDD</option>
                             <option value="">Sélectionner le type de mission</option>
                         </select>
-                        <label class="form-label" for="start_date">Date de début</label>
-                        <input type="date" name="start_date" id="start_date">
+                        <label class="form-label" for="start_date" required>Date de début</label>
+                        <input type="date" name="start_date" id="start_date" value="<%= values.date || '' %>">
                     </div>
                     <div class="about-salary">
                         <label class="form-label" for="salary">Salaire</label>
-                        <input type="number" id="salary" name="salary">
+                        <input type="number" id="salary" name="salary" value="<%= values.salary || '' %>" required>
                         <label class="form-label" for="unity">Unité de salaire</label>
-                        <select name="salary_unit" id="salary_unit">
+                        <select name="salary_unit" id="salary_unit" value="<%= values.salary_unit || '' %>" required>
                             <option value="">Sélectionnez l'unité</option>
                             <option value="monthly">Brut mensuel</option>
                             <option value="annualy">Brut annuel</option>
@@ -52,21 +54,35 @@
                 </div>
 
                 <div class="announce-form-contact">
-                    <label class="form-label" for="mail">Votre adresse de contact</label>
+                    <label class="form-label" for="mail" value="<%= values.mail || '' %>" required>Votre adresse de
+                        contact</label>
                     <input type="email" name="mail">
-                    <label class="form-label" for="phone">Votre téléphone de contact</label>
+                    <label class="form-label" for="phone" value="<%= values.phone || '' %>" required>Votre téléphone de
+                        contact</label>
                     <input type="tel" name="phone">
                 </div>
 
                 <div class="create-password-field">
-                    <label class="form-label" for="password">Mot de passe</label>
+                    <label class="form-label" for="password" required>Mot de passe</label>
                     <input type="password" name="password">
                     <p class="password-field-warning">Un mot de passe est nécessaire pour administrer l'annonce une fois
                         publiée. Assurez vous de le conservez précieusement.</p>
                 </div>
 
-                <input type="submit" value="Postez votre annonce" class="form-submit">
-                </select>
+                <% if (errors) { %>
+                    <% Object.keys(errors).forEach(function(field) { %>
+                        <% if (errors[field].errors && errors[field].errors.length) { %>
+                            <% errors[field].errors.forEach(function(msg) { %>
+                                <small class="field-error" style="color: #f44336">
+                                    <%= msg %>
+                                </small>
+                                <% }) %>
+                                    <% } %>
+                                        <% }) %>
+                                            <% } %>
+
+                                                <input type="submit" value="Postez votre annonce" class="form-submit">
+                                                </select>
             </form>
         </main>
 
