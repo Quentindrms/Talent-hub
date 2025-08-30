@@ -1,0 +1,144 @@
+$primary-100 : #154D71;
+$primary-65 : rgb(from #154D71 r g b / 65%);
+$primary-30 : rgb(from #154D71 r g b / 30%);
+
+$secondary-100 : #CFAB8D;
+$secondary-65 : rgb(from #154D71 r g b / 65%);
+$secondary-30 : rgb(from #154D71 r g b / 30%);
+
+$black : #0F0E0E;
+$white : #FDFDFD;
+$background : #F9F6F3;
+$gray-dark : #4C4C4C;
+$gray-light : #DADAD7;
+
+@media (min-width: 801px) {
+
+    .navbar {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-banner {
+        height: 15rem;
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-button {
+        padding: 0.5rem;
+        margin: 1rem;
+        max-width: max-content;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .announce-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .announce {
+        max-width: 40%;
+        min-width: 30%;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+    }
+
+    .announce-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /** Formulaire **/
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .announce-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.50rem;
+        width: 40%;
+        padding: auto;
+
+        padding: 2rem;
+    }
+
+    .title-form {
+        padding: 0.25rem;
+    }
+
+    .form-label {
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .announce-form-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .announce-form-select-area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.30rem;
+        padding: 0.75rem;
+    }
+
+    .annonce-form-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-mission {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .create-password-field {
+        font-size: 0.75rem;
+        font-style: italic;
+    }
+
+    .form-submit {
+        font-weight: bold;
+        height: 2rem;
+        padding: 0.5rem;
+    }
+
+}

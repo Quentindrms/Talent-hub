@@ -1,0 +1,165 @@
+/* Smartphones portrait et paysage */
+
+@media (max-width: 800px){
+
+.brand-container{
+    text-align: center;
+}
+
+.navbar{
+    max-height: fit-content;
+    padding: 5vw;
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vw;
+    gap: 1vw;
+}
+
+.menu-element{
+    text-align: center;
+}
+
+.hero-banner {
+    height: fit-content;
+}
+
+.title-2-hero{
+    font-size: 1.1rem;
+}
+
+.wrapper-text{
+    font-size: 0.9rem;
+}
+
+.wrapper-button {
+    padding: 0.25rem;
+    margin: 1rem;
+    max-width: fit-content;
+}
+
+.title-2{
+    font-size: 1.1rem;
+}
+
+.announce-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 0.75rem;
+
+    max-width: 90vw;
+}
+
+.announce {
+    max-width: fit-content;
+    min-width: 30%;
+
+    padding: 0.5rem;
+
+    gap: 1rem;
+}
+
+.title-3-announce{
+    font-size: 1rem;
+}
+
+.announce-text{
+    padding: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.announce-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* READ ANNOUNCE */
+
+    .announce-skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /** Formulaire **/
+
+.announce-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.50rem;
+
+    padding: 2rem;
+}
+
+.title-form{
+    padding: 0.25rem;
+}
+
+.form-label{
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.25rem
+}
+
+.form-input{
+    width: 90vw;
+}
+
+.announce-form-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.announce-form-select-area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.30rem;
+    padding: 1rem;
+}
+
+.announce-form-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-mission{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.create-password-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 90vw;
+}
+
+.password-field-warning{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.form-submit{
+    font-weight: bold;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+}

@@ -1,5 +1,7 @@
 @use 'forme-style';
 @use 'read-announce';
+@use './responsive/mobile.scss';
+@use './responsive/desktop.scss';
 
 /** Color palett **/
 
@@ -16,6 +18,7 @@ $white : #FDFDFD;
 $background : #F9F6F3;
 $gray-dark : #4C4C4C;
 $gray-light : #DADAD7; 
+
 
 * {
     margin: 0;
@@ -42,12 +45,7 @@ main{
 }
 
 .navbar {
-    height: 4rem;
     border-bottom: solid $gray-light 2px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .brand-container {
@@ -56,12 +54,6 @@ main{
 
 .brand-name {
     font-size: 24px;
-}
-
-.menu-list {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
 }
 
 .menu-element {
@@ -98,14 +90,7 @@ main{
 }
 
 .hero-banner {
-    height: 15rem;
-    min-width: 100%;
-    max-width: 100%;
     background-color: $primary-65;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     border-bottom: 2px solid $gray-light;
 }
 
@@ -129,15 +114,9 @@ main{
 }
 
 .wrapper-button {
-    padding: 0.5rem;
-    margin: 1rem;
-    max-width: max-content;
-
     background-color: $white;
     color: $black;
-
     border-radius: 5px;
-    
     box-shadow: 4px 5px 2px 1px $secondary-30;
 }
 
@@ -151,41 +130,18 @@ main{
 }
 
 .announce-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .announce {
-    max-width: 40%;
-    min-width: 30%;
-
-    padding: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
     border: 2px solid $gray-dark;
     border-radius: 5px;
 
     box-shadow: 2px 4px 2px $gray-dark;
 
     gap: 1rem;
-}
-
-.announce-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
 }
 
 .announce-tag{
