@@ -1,4 +1,5 @@
-import { Announce, PostedAnnounce } from "../data/data";
+import {PostedAnnounce } from "../data/data";
+import { Announce } from "../../libs/Type";
 import {z} from "zod";
 
 const announceSchema = z.object({
