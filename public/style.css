@@ -158,9 +158,9 @@ main {
   }
   .announce-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
   /* READ ANNOUNCE */
   .announce-skills {
@@ -224,6 +224,38 @@ main {
     font-weight: bold;
     height: 2rem;
     padding: 0.5rem;
+  }
+  /** Visualisation d'une annonce **/
+  .announce-main-title {
+    font-size: 1.1rem;
+  }
+  .announce-description {
+    margin: 0.25rem;
+  }
+  .announce-body-text {
+    margin: 0.25rem;
+    padding: 0.25rem;
+  }
+  .announce-skills {
+    padding: 0.25rem;
+  }
+  .announce-type {
+    padding: 0.25rem;
+  }
+  .announce-start-date {
+    padding: 0.25rem;
+  }
+  .announce-salary {
+    padding: 0.25rem;
+  }
+  .announce-title-3 {
+    padding: 0.25rem;
+  }
+  .announce-mail {
+    padding: 0.25rem;
+  }
+  .announce-edit {
+    margin: 0.5rem;
   }
 }
 @media (min-width: 801px) {
