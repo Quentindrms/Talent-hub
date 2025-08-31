@@ -1,23 +1,21 @@
 <%- include('../partials/head', {title:'Accueil'}) %>
     <%- include('../partials/header') %>
 
-    <main>
+        <main>
 
             <%- include('../elements/hero') %>
 
-        <h2 class="title-2">Les dernières annonces</h2>
+                <h2 class="title-2">Les dernières annonces</h2>
 
-        <div class="announce-container">
-            <% PostedAnnounce.forEach((announce) => { %>
-                <%- include("../elements/announce", {announce}) %>
-            <% }) %>
-        </div>
+                <div class="announce-container">
+                    <% for(let i = Math.max(0, PostedAnnounce.length - 3); i < PostedAnnounce.length; i++) { %>
+                        <%- include("../elements/announce", { announce: PostedAnnounce.at(i) }) %>
+                            <%} %>
+                </div>
 
-        <div class="get-announces">
-            <p class="get-announces-button">Consulter toutes les annonces</p>
-        </div>
+                <div class="get-announces">
+                    <p class="get-announces-button">Consulter toutes les annonces</p>
+                </div>
         </main>
 
-
-
-<%- include('../partials/footer') %>
+        <%- include('../partials/footer') %>
