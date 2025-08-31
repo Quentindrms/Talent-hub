@@ -9,8 +9,8 @@
 
                 <div class="announce-container">
                     <% for(let i = Math.max(0, PostedAnnounce.length - 3); i < PostedAnnounce.length; i++) { %>
-                        <%- include("../elements/announce", { announce: PostedAnnounce.at(i) }) %>
-                            <%} %>
+                        <%- include("../elements/announce", { announce: PostedAnnounce[i], skills, getSkillByValue}) %>
+                             <% } %>
                 </div>
 
                 <div class="get-announces">

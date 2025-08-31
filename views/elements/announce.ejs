@@ -6,8 +6,13 @@
         <%= announce.description %>
     </p>
     <div class="announce-footer">
-        <p class="announce-tag">Javascript</p>
-        <p class="announce-tag">Typescript</p>
+
+        <% const skillsText = getSkillByValue(announce.skills) %>
+        <% if(skillsText){ %>
+            <% skillsText.forEach((skill) => { %>
+                <p class="announce-tag"><%= skill %></p>
+            <% }) %>
+       <% } %>
         <div class="publication-date">
         </div>
     </div>

@@ -1,6 +1,7 @@
 import { Controller } from "../libs/Controller";
 import { PostedAnnounce } from "../src/data/data";
-import {skills} from "../src/data/skills";
+import { skills } from "../src/data/skills";
+import { getSkillByValue } from "../src/ts/getSkill";
 
 export class GlobalController extends Controller {
 
@@ -8,12 +9,16 @@ export class GlobalController extends Controller {
         console.log(PostedAnnounce);
         this.response.render("pages/home", {
             PostedAnnounce,
+            getSkillByValue,
+            skills,
         });
     }
 
     public announces() {
         this.response.render("pages/announces", {
             PostedAnnounce,
+            skills,
+            getSkillByValue
         })
     }
 
@@ -24,7 +29,7 @@ export class GlobalController extends Controller {
              */
             PostedAnnounce,
             skills,
-            errors: {}, 
+            errors: {},
             values: {}
         })
     }
