@@ -51,6 +51,10 @@ main {
   padding: 0.5rem;
 }
 
+.form-input-select {
+  width: 90%;
+}
+
 /** Color palett **/
 .display-announce {
   text-align: justify;

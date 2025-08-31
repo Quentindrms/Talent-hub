@@ -18,18 +18,11 @@
                         value="<%= values.bodytext || '' %>"></textarea>
                 </div>
                 <label class="form-label" for="skills">Compétence(s) recherchée(s)</label>
-                <select name="skills" class="form-input" value="<%= values.skills || '' %>" multiple required>Sélectionnez les compétences>
+                <select name="skills" class="form-input-select" value="<%= values.skills || '' %>" multiple required>Sélectionnez les compétences>
                     
                <% skills.forEach((skill) => { %>
                     <option value="<%= skill.value %>"><%= skill.text %></option>
                <% }) %>     
-                    <!-- <option value="">Sélectionnez au moins une compétence</option>
-                    <option value="javascript">Javascript</option>
-                    <option value="typescript">Typescript</option>
-                    <option value="cpp">C++</option>
-                    <option value="c">C</option>
-                    <option value="react">React</option>
-                    <option value="nodejs">NodeJS</option> -->
                 </select>
 
                 <div class="announce-form-select-area">
