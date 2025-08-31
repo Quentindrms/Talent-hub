@@ -1,5 +1,6 @@
 import { Controller } from "../libs/Controller";
-import { Announce, PostedAnnounce } from "../src/data/data";
+import {PostedAnnounce } from "../src/data/data";
+import { Announce } from "../libs/Type";
 import { validateAnnounce } from "../src/ts/formValidator";
 import { z } from "zod";
 

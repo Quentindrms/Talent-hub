@@ -1,5 +1,6 @@
 import { Controller } from "../libs/Controller";
 import { PostedAnnounce } from "../src/data/data";
+import {skills} from "../src/data/skills";
 
 export class GlobalController extends Controller {
 
@@ -22,6 +23,7 @@ export class GlobalController extends Controller {
              * par une erreur
              */
             PostedAnnounce,
+            skills,
             errors: {}, 
             values: {}
         })
