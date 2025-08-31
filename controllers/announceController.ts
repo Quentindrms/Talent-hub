@@ -1,6 +1,8 @@
 import { Controller } from "../libs/Controller";
-import { Announce, PostedAnnounce } from "../src/data/data";
+import {PostedAnnounce } from "../src/data/data";
+import { Announce } from "../libs/Type";
 import { validateAnnounce } from "../src/ts/formValidator";
+import { skills } from "../src/data/skills";
 import { z } from "zod";
 
 export class announceController extends Controller {
@@ -58,6 +60,7 @@ export class announceController extends Controller {
 
             this.response.render('pages/share-announce', {
                 PostedAnnounce,
+                skills,
                 values:{},
                 errors:{}
             })
